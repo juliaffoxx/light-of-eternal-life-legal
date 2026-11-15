@@ -20,6 +20,11 @@ header { border-bottom: 1px solid var(--line); }
 nav { font-size: .875rem; }
 nav a { text-decoration: none; }
 nav a[aria-current="page"] { color: #fff5e3; text-decoration: underline; }
+.languages { position: relative; }
+.languages summary { color: var(--gold); cursor: pointer; }
+.languages div { position: absolute; z-index: 1; inset: calc(100% + .5rem) 0 auto auto; min-width: max-content; padding: .4rem; border: 1px solid var(--line); border-radius: .5rem; background: #0b101c; }
+.languages a { display: block; padding: .3rem .6rem; }
+.languages a[aria-current="true"] { color: #fff5e3; text-decoration: underline; }
 .hero { position: relative; isolation: isolate; min-height: clamp(15rem, 34vw, 23rem); display: grid; align-content: end; border-bottom: 1px solid var(--line); overflow: hidden; }
 .hero img { position: absolute; z-index: -2; inset: 0 0 auto auto; width: min(75%, 48rem); height: 100%; object-fit: cover; object-position: 50% 48%; }
 .hero::after { content: ""; position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, #0b101c 20%, transparent 84%), linear-gradient(0deg, #0b101c 1%, transparent 95%); }
